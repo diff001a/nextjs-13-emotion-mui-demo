@@ -1,5 +1,3 @@
-nextjs-13-emotion-mui-demo
-
 # next.js 13 + emotion + mui + demo
 
 [このコメント](https://github.com/emotion-js/emotion/issues/2928#issuecomment-1319747902)をもとに作った、`Next.js 13のappディレクトリ` + `emotion` + `mui`のデモです。
