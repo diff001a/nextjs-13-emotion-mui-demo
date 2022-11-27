@@ -1,6 +1,6 @@
 import Header from "./header";
-import EmotionRoot from "./EmotionRoot";
-import GlobalMui from "../components/styles/GlobalMui";
+import EmotionRoot from "@/components/styles/EmotionRoot";
+import GlobalMui from "@/components/styles/GlobalMui";
 import { GlobalStyle } from "./styles";
 
 export default function RootLayout({ children }: any) {
