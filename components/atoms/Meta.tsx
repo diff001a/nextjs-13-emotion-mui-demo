@@ -19,7 +19,7 @@ const Meta = ({
   imageHeight,
   children,
 }: MetaType) => {
-  const siteName = "サイト名";
+  const siteName = "Next.js 13 demo site";
   if (title === undefined) {
     title = siteName;
   } else {
@@ -27,7 +27,7 @@ const Meta = ({
   }
   const width = imageWidth ? imageWidth : 800;
   const height = imageHeight ? imageHeight : 600;
-  const url = process.browser ? location.href : "";
+  const url = "";
   return (
     <>
       <meta
@@ -35,10 +35,9 @@ const Meta = ({
         content="width=device-width,initial-scale=1.0,maximum-scale=1.0"
       />
       <meta name="robots" content={robots} />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <title>{title}</title>
-      <meta property="og:type" content={type} />
       <meta name="description" content={description} />
+      <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={title} />

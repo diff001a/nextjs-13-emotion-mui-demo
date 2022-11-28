@@ -1,6 +1,6 @@
 "use client";
 
-import { Input, Button, Select, Typography } from "@/components/atoms";
+import { Typography } from "@/components/atoms";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 

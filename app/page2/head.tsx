@@ -1,7 +1,5 @@
+import Meta from "@/components/atoms/Meta";
+
 export default function Head() {
-  return (
-    <>
-      <title>commponents</title>
-    </>
-  );
+  return <Meta title="Page 2" />;
 }
