@@ -12,7 +12,7 @@ export default async function Header() {
               <Link href="/">top</Link>
             </li>
             <li>
-              <Link href="/components">components</Link>
+              <Link href="/page2">components</Link>
             </li>
           </ul>
         </nav>

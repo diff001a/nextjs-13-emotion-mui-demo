@@ -4,6 +4,17 @@ import { useSession } from "next-auth/react";
 import { Button } from "@/components/atoms";
 import { signIn, signOut } from "next-auth/react";
 import { Box } from "@mui/material";
+import Link from "next/link";
+import styled from "@emotion/styled";
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+`;
 
 export function SignOut() {
   return <Button onClick={() => signOut()}>Sign out</Button>;
@@ -17,20 +28,21 @@ export default function User() {
   const { data: session, status } = useSession();
   if (status === "authenticated") {
     return (
-      <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Wrapper>
+        <Link href="/dashboard">
           <small>Signed in as</small>
+          <br />
           <strong>{session.user?.email}</strong>
-        </Box>
+        </Link>
         {status === "authenticated" ? <SignOut /> : ""}
-      </Box>
+      </Wrapper>
     );
   } else {
     return (
-      <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
+      <Wrapper>
         <span>{status}</span>
         {status === "unauthenticated" ? <SignIn /> : ""}
-      </Box>
+      </Wrapper>
     );
   }
 }

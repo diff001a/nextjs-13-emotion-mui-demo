@@ -1,4 +1,5 @@
 import { DataList } from "@/components/molecules/DataList";
+import { Typography } from "@/components/atoms";
 
 type Data = {
   id: number;
@@ -18,7 +19,9 @@ export default async function Page() {
   return (
     <div className="wrapper">
       <div className="inner">
-        <h1>Data fetching test</h1>
+        <Typography variant="h1" className="border">
+          Data fetching test😉
+        </Typography>
         <DataList data={data} />
       </div>
     </div>

@@ -53,19 +53,20 @@ export const globalStyle = css`
   ${reset}
   ${setSize()}
   html {
-    body {
-      background: var(--background);
-    }
     ${font}
-    input,
-    button,
-    textarea,
-    button,
-    select {
+    body {
       ${font}
-    }
-    a {
-      color: var(--link);
+      background: var(--background);
+      input,
+      button,
+      textarea,
+      button,
+      select {
+        ${font}
+      }
+      a {
+        color: var(--link);
+      }
     }
   }
   * {

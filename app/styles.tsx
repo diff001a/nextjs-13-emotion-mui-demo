@@ -31,7 +31,8 @@ export const GlobalStyle = () => {
     }
     .inner {
       width: var(--width);
-      h1 {
+      h1,
+      h2 {
         margin: 20px 0;
       }
     }

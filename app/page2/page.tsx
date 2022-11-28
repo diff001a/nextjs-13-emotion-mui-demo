@@ -1,4 +1,4 @@
-import { Input, Button, Select } from "@/components/atoms";
+import { Input, Button, Select, Typography } from "@/components/atoms";
 
 export default function Page() {
   const options = [
@@ -9,7 +9,9 @@ export default function Page() {
   return (
     <div className="wrapper">
       <div className="inner">
-        <h1>MUI Components + react-select</h1>
+        <Typography variant="h2" className="border">
+          MUI Components + react-select
+        </Typography>
         <div style={{ display: "flex", gap: "20px" }}>
           <Select width="200px" options={options} placeholder="single select" />
           <Select

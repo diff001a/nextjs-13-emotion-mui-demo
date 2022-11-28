@@ -12,8 +12,8 @@ colors.darkBackground = "#f3f9fe";
 colors.background = "#ffffff";
 colors.gray = "#f5faff";
 colors.border = "#d4dfe5";
-colors.text = "#2d3748";
-colors.secondaryText = "#2d3748";
+colors.text = "#19405d";
+colors.secondaryText = "#19405d";
 
 // primary //
 colors.primary = "#31aaff";
@@ -22,7 +22,7 @@ colors.primaryLight = "#2cd0ff";
 colors.primaryDark = "#2b99e8";
 
 // secondary //
-colors.secondary = "#2d3748";
+colors.secondary = "#19405d";
 colors.secondaryLight = "#354054";
 colors.secondaryDark = "#1f2939";
 
